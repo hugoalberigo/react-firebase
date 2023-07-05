@@ -1,0 +1,212 @@
+body {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    background-color: #9C835F;
+}
+
+.back-icon {
+    width: auto;
+    height: 50px;
+}
+.title {
+    color: rgb(255, 191, 44);
+}
+
+#game-title {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    margin-top: 10px;
+}
+
+h1{
+    margin-left: 20px;
+}
+
+#leaderboard-btn {
+    justify-self: end;
+    border-radius: 10px;
+    width: 15vw;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: black;
+}
+
+.modal-content {
+    display: grid;
+    background-color: white;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 60%;
+    text-align: left;
+    padding: 30px;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+  
+.close:hover, .close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+h2{
+    justify-self: center;
+}
+
+.name {
+    display: grid;
+    width: 223px;
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    justify-items: center;
+    align-items: center;
+}
+
+#player-hand {
+    display: grid;
+    justify-items: end;
+    padding-right: 5vw;
+}
+
+/* Tombol pilihan pemain */
+.player-choice {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 30px;
+    width: 223px;
+    height: 204px;
+}
+
+.batu {
+    background-image: url(../img/batu.png);
+    background-size: 128px 92px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.kertas {
+    background-image: url(../img/kertas.png);
+    background-size: 115px 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gunting {
+    background-image: url(../img/gunting.png);
+    background-size: 134px 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#vsText {
+    height: 186px;
+    font-size: 144px;
+    font-weight: 700;
+    color: #BD0000;
+    text-align: center;
+    margin: 0;
+}
+
+.player-win {
+    z-index: 9;
+    position: absolute;
+    width: 220px;
+    top: 220px;
+    left: 5px;
+    background-color: chocolate;
+    padding: 25px 20px;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.computer-win {
+    z-index: 9;
+    position: absolute;
+    width: 220px;
+    top: 220px;
+    left: 5px;
+    background-color: chocolate;
+    padding: 25px 20px;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.draw {
+    z-index: 9;
+    position: absolute;
+    width: 220px;
+    top: 235px;
+    left: 5px;
+    background-color: darkgreen;
+    padding: 25px 20px;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+#com-hand {
+    padding-left: 5vw;
+}
+
+.selected {
+    background-color: rgb(196, 196, 196);
+    border: none;
+} 
+
+/* Pilihan computer */
+.com-choice {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    width: 223px;
+    height: 204px;
+    justify-items: center;
+    align-items: center;
+}
+
+#refresh {
+    display: grid;
+    justify-items: center;
+}
+
+#refresh-btn {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+#refresh-img {
+    width: 77px;
+    height: 71px;
+}
+
+.hand-icon {
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+  
+.hand-icon:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+  display: none;
+} 

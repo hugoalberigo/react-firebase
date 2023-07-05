@@ -1,0 +1,18 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    margin: 0 -12px;
+}
+
+.nav-item {
+    margin: 10px;
+}
+
+#navbarNav {
+    margin-left: 20px;
+}
+
+#logout-btn {
+    justify-content: flex-end;
+    margin-right: 20px;
+}
